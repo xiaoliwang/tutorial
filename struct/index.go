@@ -1,14 +1,39 @@
 package main
 import "fmt"
 
-func main() {
-  i, j := 42, 2710
-  p := &i
-  fmt.Println(*p)
-  *p = 21
-  fmt.Println(i)
+type Vertex struct {
+    X int
+    Y int
+}
 
-  p = &j
-  *p = *p / 37
-  fmt.Println(j)
+// structs
+var (
+    v = Vertex{1, 2}
+    vp = &v
+    v2 = Vertex{X: 1}
+)
+
+func main() {
+    i := 42
+    p := &i
+    fmt.Println(*p)
+    *p = 21
+    fmt.Println(i)
+
+    vp.X = 1e9 //(*pv).X = 1e9
+    fmt.Println(v)
+    fmt.Println(v2)
+
+    var a [2]string
+    a[0] = "Hello"
+    a[1] = "World"
+    fmt.Println(a[0], a[1])
+    fmt.Println(a)
+
+    // slices are like references to arrays
+    primes := [6]int{2, 3, 5, 7, 11, 13}
+    var s[]int = primes[1:4]
+    s[1] = 109
+    fmt.Println(primes)
+    fmt.Println(s)
 }
