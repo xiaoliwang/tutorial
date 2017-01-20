@@ -2,7 +2,7 @@ package main
 
 import (
     "fmt"
-    "github.com/xiaoliwang/stringutil"
+    "github.com/xiaoliwang/tutorial/stringutil"
 )
 
 func main() {
