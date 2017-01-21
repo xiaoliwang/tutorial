@@ -13,6 +13,15 @@ var (
     v2 = Vertex{X: 1}
 )
 
+// slices
+var ss = []struct{
+    i int
+    b bool
+} {
+    {2, true},
+    {3, false},
+}
+
 func main() {
     i := 42
     p := &i
@@ -36,4 +45,11 @@ func main() {
     s[1] = 109
     fmt.Println(primes)
     fmt.Println(s)
+
+    fmt.Println(ss);
+
+    //var nss []int // nil slices
+    for i, v := range s {
+        fmt.Printf("i is %d, v is %d\n", i, v);
+    }
 }
