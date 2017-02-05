@@ -8,10 +8,21 @@ type Vertex struct {
 
 var m map[string]Vertex
 
+var ml = map[string]Vertex{
+	"Bell Labs": Vertex{
+		40.68433, -74.39967,
+	},
+	"Google": {
+		37.42202, -122.08408,
+	},
+}
+
 func main() {
     m = make(map[string]Vertex)
     m["Bell Labs"] = Vertex{
-        40.68433, -74.39967
-    }
-    fmt.Pringln(m["Bell Labs"])
+  		40.68433, -74.39967,
+  	}
+    fmt.Println(m["Bell Labs"])
+    fmt.Println(ml)
+
 }
