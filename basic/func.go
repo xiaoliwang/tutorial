@@ -19,14 +19,12 @@ func split(sum int) (x, y int) {
     return
 }
 
-var i int = 10
-
-func main() {
+func initializers() {
     c, python, java := true, false, "no!"
-    fmt.Println(i, c, python, java)
+    fmt.Println(c, python, java)
     fmt.Println(split(16))
-    a, b := swap("hello", "world")
-    fmt.Println(a, b)
-    fmt.Println(add(42, 13))
+}
+
+func favoriteNumber() {
     fmt.Println("My favorite number is", rand.Intn(10));
 }

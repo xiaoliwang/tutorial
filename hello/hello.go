@@ -2,9 +2,9 @@ package main
 
 import (
     "fmt"
-    "github.com/xiaoliwang/tutorial/stringutil"
+    "github.com/xiaoliwang/tutorial/string"
 )
 
 func main() {
-    fmt.Printf(stringutil.Reverse("!oG ,olleH"))
+    fmt.Printf(string.Reverse("!oG ,olleH"))
 }
